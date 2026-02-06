@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-lg text-slate-300">
-            I help businesses rank higher on Google, drive more traffic, and
-            generate more leads with proven SEO strategies.
+            I help businesses rank higher on Google, drive more organic traffic,
+            and generate leads using powerful SEO strategies.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -54,16 +55,16 @@ export default function Home() {
       <section className="mt-20">
         <h2 className="text-3xl font-bold">SEO Services</h2>
         <p className="mt-2 text-slate-300">
-          I provide complete SEO solutions to grow your business.
+          Complete SEO solutions designed to increase rankings and conversions.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {[
-            ["SEO Audit", "Complete SEO audit with roadmap fixes."],
-            ["On-Page SEO", "Optimize content and pages for ranking."],
-            ["Technical SEO", "Fix speed, indexing, and structure issues."],
+            ["SEO Audit", "Full SEO audit with roadmap fixes."],
+            ["On-Page SEO", "Optimize pages for ranking + conversions."],
+            ["Technical SEO", "Fix indexing, speed, and site structure."],
             ["Local SEO", "Rank your business on Google Maps."],
-            ["Content Strategy", "SEO blog strategy that ranks faster."],
+            ["Content Strategy", "Keyword-driven blog plan that ranks."],
             ["Link Building", "Backlink strategy to build authority."],
           ].map(([title, desc]) => (
             <div key={title} className="rounded-2xl bg-slate-900 p-6 shadow">
@@ -74,19 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-20 text-center">
-        <h2 className="text-3xl font-bold">Let’s Work Together 🚀</h2>
-        <p className="mt-2 text-slate-300">
-          Want more traffic, leads, and sales? Let’s build your SEO growth plan.
-        </p>
-
-        <Link
-          href="/contact"
-          className="mt-6 inline-block rounded-xl bg-blue-600 px-8 py-3 font-semibold text-white hover:bg-blue-500"
-        >
-          Contact Me
-        </Link>
-      </section>
+      <CTA />
     </main>
   );
 }
