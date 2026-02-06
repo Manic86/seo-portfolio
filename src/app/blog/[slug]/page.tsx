@@ -1,30 +1,23 @@
 import Link from "next/link";
 
-const posts: Record<
-  string,
-  { title: string; content: string; date: string }
-> = {
-  "how-to-rank-faster-on-google": {
+const posts = [
+  {
+    slug: "how-to-rank-faster-on-google",
     title: "How to Rank Faster on Google",
-    date: "06 Feb 2026",
-    content:
-      "Ranking faster on Google requires technical SEO, content strategy, and backlinks. Focus on low competition keywords, fix site speed, improve on-page SEO, and publish helpful content consistently.",
+    desc: "Learn the best SEO strategies to rank faster and get traffic quickly.",
   },
-
-  "local-seo-checklist": {
+  {
+    slug: "local-seo-checklist",
     title: "Local SEO Checklist for Small Businesses",
-    date: "06 Feb 2026",
-    content:
-      "Optimize your Google Business Profile, get reviews, build citations, add local keywords, and create location landing pages. Local SEO helps you rank in Google Maps and drive more customers.",
+    desc: "A complete guide to rank on Google Maps and local search results.",
   },
-
-  "technical-seo-mistakes": {
+  {
+    slug: "technical-seo-mistakes",
     title: "Technical SEO Mistakes That Hurt Rankings",
-    date: "06 Feb 2026",
-    content:
-      "Slow speed, broken links, duplicate content, missing sitemap, and mobile issues are the biggest technical SEO mistakes. Fix them to improve crawling and indexing.",
+    desc: "Common SEO errors that prevent your website from ranking on Google.",
   },
-};
+];
+
 
 export default function BlogPost({
   params,
